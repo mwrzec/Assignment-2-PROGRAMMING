@@ -1,4 +1,3 @@
-from ast import While
 from app import Product
 """
 main function that runs sim
