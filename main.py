@@ -27,9 +27,9 @@ def main():
     totalprofit = 0
     totalloss = 0
     tnetprofit = 0
-
+    
     for monthly_data in product.monthly_data:
-        month, manufactured, sold, stock, gain, loss, netgainloss = netgainloss - monthly_data
+        month, manufactured, sold, stock, gain, loss, netgainloss = monthly_data
         totalprofit += gain
         totalloss += loss
         tnetprofit += netgainloss
