@@ -16,6 +16,8 @@ class Product:
         unit_sales = min(unit_sales, self.stock)
         self.stock -= unit_sales
 
+        return unit_sales
+
     def stock_statement(self,months):
         for month in range(1, months + 1):
             unit_sales  = self.product_sale_month()
