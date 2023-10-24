@@ -1,6 +1,8 @@
 from ast import While
 from app import Product
-
+"""
+main function that runs sim
+"""
 def main():
     print("Welcome to Marcel's Product Stock Simulation")
 
@@ -8,7 +10,9 @@ def main():
     name = input("Enter the Name of the Product:  ")
     price = float(input("Enter the Product Price:  "))
     cost_to_make = float(input("Enter the Manufacturer Cost:  "))
-
+    """
+    while loop to ensure stock > 0
+    """
     while True:
         current_stock = int(input("Enter the Current Stock:  "))
         if current_stock > 0:
@@ -22,12 +26,16 @@ def main():
     product = Product(code, name, price, cost_to_make, current_stock, monthly_units)
 
     product.stock_statement(months)
-
+    """
+    display statement
+    """
     print("Monthly Stock Statement: ")
     totalprofit = 0
     totalloss = 0
     tnetprofit = 0
-    
+    """
+    display summary
+    """
     for monthly_data in product.monthly_data:
         month, manufactured, sold, stock, gain, loss, netgainloss = monthly_data
         totalprofit += gain
