@@ -3,7 +3,7 @@ from app import Product
 main function that runs sim
 """
 def main():
-    print("Welcome to Marcel's Product Stock Simulation")
+    print("Welcome to Marcel's Product Stock & Sale Simulation")
 
     code = int(input("Enter the Product Code (100-1000):  "))
     name = input("Enter the Name of the Product:  ")
